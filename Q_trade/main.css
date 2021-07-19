@@ -1,0 +1,142 @@
+/* スタイルシートに反映されないときは、キャッシュが残っている可能性があるので、comand shift R を同時押し */
+a{
+    text-decoration:none;
+}
+
+
+.syo{
+    text-align:right;
+    padding:60px 20px 10px 20px;
+    opacity:0.7;
+    letter-spacing:2px;
+}
+
+.header{
+    width:100%;
+    border-bottom:double;
+    background-image:url("photo/空.JPG");
+    height:150px;
+    position:fixed;
+    top:0px;
+    z-index:10;
+}
+
+.Qtrade{
+    color:red;
+    padding:50px;
+    font-size:40px;
+    opacity:0.7;
+    letter-spacing:2px;
+}
+
+.home{
+    opacity:0.7;
+    letter-spacing:2px;
+}
+
+.main{
+    background-color:#f7f7f7;
+    height:700px;
+    text-align:center;
+    margin-top:120px;
+}
+
+.btn{
+    margin:100px 60px 50px 60px;
+    padding:40px 70px 40px 70px;
+    display:inline-block;
+    color:white;
+    border-radius:4px;
+    opacity:0.6;
+    transition:all 0.8s;
+    width:120px;
+}
+.btn:hover{
+    opacity:1;
+}
+.btn:active{
+    box-shadow:none;
+    position:relative;
+    top:7px;
+}
+
+
+.b1{
+    background-color:rgb(214, 34, 160);
+    box-shadow:0px 7px rgb(124, 14, 91);
+}
+
+.b2{
+    background-color:rgb(38, 56, 219);
+    box-shadow:0px 7px rgb(29, 43, 168);
+}
+
+.b3{
+    background-color:rgb(19, 206, 65);
+    box-shadow:0px 7px rgb(126, 124, 17);
+}
+.right-box{
+    display:inline-block;
+    width:40%;
+    height: 50px;
+}
+.left-box{
+    display:inline-block;
+    width:40%;
+}
+.box{
+    border:solid 1px black;
+    height:200px;
+    margin:30px;
+}
+footer{
+        border-top:double;
+        background-image:url("photo/空.JPG");
+        height:150px;
+}
+.btns{
+    margin:10px 4px 5px 4px;
+    padding:4px 4px 4px 4px;
+    display:inline-block;
+    color:black;
+    border-radius:2px;
+    opacity:0.6;
+    transition:all 0.8s;
+    width:60px;
+    font-weight:lighter;
+}
+.btns:hover{
+    opacity:1;
+}
+.btns:active{
+    box-shadow:none;
+    position:relative;
+    top:7px;
+}
+.bs1{
+    background-color:yellow;
+    box-shadow:0px 2px rgb(126, 124, 17);
+}
+.bs2{
+    background-color:red;
+    box-shadow:0px 2px rgb(190, 64, 5);
+}
+.top-bt{
+    margin:20px;
+    padding:10px;
+    border-radius:2px;
+    background-color:red;
+}
+.set-top{
+    text-align:right;
+    position:fixed;
+    height:47px;
+    background-color:rgb(212, 207, 207);
+    width:100%;
+    font-size:21px;
+    padding-top:20px;
+    z-index:1;
+}
+.list1{
+    padding-top:100px;
+}
