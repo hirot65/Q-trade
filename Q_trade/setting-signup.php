@@ -23,6 +23,19 @@
     <link rel="stylesheet" href="main.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <title>Qtrade</title>
+
+    <script>
+        //html5になってからscriptにmetaとかデフォルト使用する場合は打ち込む必要がなくなった
+        //check関数という仮想の関数を作成。formに対してonsubmit属性をfalseにすることで、ボタンを押した時のイベントを定義。
+        function check(){
+            var a=document.form_si.name.value;//document.(formのname属性).(input textのname属性).value
+            if(a==""){
+                alert("資機材名は必ず入力してください");
+                return false;
+            }
+        }
+    </script>
+
     </head>
      <body>
         <div class="header">
@@ -33,7 +46,7 @@
         </div>
         <div class="main">
             <!-- formを使用してregist.phpにnameに入った文字をとばす(post使用)。そこでSQLに登録する処理をする。 -->
-            <form method="post" action="regist.php">
+            <form method="post" action="regist.php" name="form_si" onsubmit="return check()">
                 <p>
                     <a>資機材名<a>
                     <input type="text" name="name" placeholder="20文字以内">
@@ -58,7 +71,7 @@
 
 
 
-        <script type="text/javascript" src="main.js"></script>
+    
      </body>
      <footer>
 

@@ -5,12 +5,13 @@
     try{
         $db=new PDO($dsn,$user,$pass);
         echo"接続OKdayo";
-
+      
         //setting-signup.phpから受け取る
-        $name=$_post['name'];
-        $keyword=$_post['keyword'];
-        $unit=$_post['unit'];
+        $name =$_POST["name"];//POSTをpostと小文字で作成して苦戦。絶対大文字で！！
+        $keyword=$_POST["keyword"];
+        $unit=$_POST["unit"];
         //これらを下の文法に代入する
+     
 
         //ここから登録用のSQL作成//////////////////////////////////
         $stmt=$db->prepare('INSERT INTO shomo (name,keyword,unit)VALUES(:name,:keyword,:unit)');//prepare関数を使ってSQLを留めておく。最後にexcuteを実行するとsqlが実行される。
@@ -45,7 +46,7 @@ $db=null//データベースの切断
             <div></div>
             <div class="syo">消防署としてログイン
               <?php
-              echo "$name";
+              echo $name;
               ?>
             </div>
         </div>
