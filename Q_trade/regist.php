@@ -25,45 +25,11 @@
         echo'DBエラー'.$e->getMessage();
     }
 
+    header("Location:setting.php");//ここで処理を行った後に、すぐにsetting.phpに遷移する。
 
 
 $db=null//データベースの切断
 ?>
-<!DOCTYPE html>
- <html lang="en">
-    <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <title>Qtrade</title>
-    </head>
-     <body>
-        <div class="header">
-            <a class="Qtrade" href='index.php'>Q-trade</a>
-            <span class = "home">新規作成</span>
-            <div></div>
-            <div class="syo">消防署としてログイン
-              <?php
-              echo $name;
-              ?>
-            </div>
-        </div>
-        <div class="main">
-            
-        </div>
 
-
-
-        <script type="text/javascript" src="main.js"></script>
-     </body>
-     <footer>
-
-        
-
-
-
-     </footer>
 </html> 
 
